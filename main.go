@@ -18,6 +18,10 @@ func main() {
 	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
 
+	r.Get("/health", func(w http.ResponseWriter, _ *http.Request) {
+		w.WriteHeader(200)
+	})
+
 	r.Get("/", func(w http.ResponseWriter, _ *http.Request) {
 		var msg = map[string]string{"message": "Hello, Railway!"}
 
