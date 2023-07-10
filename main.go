@@ -44,6 +44,8 @@ func main() {
 // Returns PORT from environment if found, defaults to
 // value in `port` parameter otherwise. The returned port
 // is prefixed with a `:`, e.g. `":3000"`.
+//
+// https://docs.railway.app/troubleshoot/fixing-common-errors#go--nethttp
 func envPortOr(port string) string {
 	// If `PORT` variable in environment exists, return it
 	if envPort := os.Getenv("PORT"); envPort != "" {
