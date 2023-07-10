@@ -10,7 +10,7 @@ tags:
 
 This example starts a [Chi](https://go-chi.io/#/) server.
 
-
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/1H34tp?referralCode=ySCnWl)
 
 ## ✨ Features
 
